@@ -55,6 +55,50 @@
    than CSS FlexBox for Complex Design Layouts.
     
 
+8. What do you mean by Cascading in CSS ?
+-> Cascading is Rules based Priorty and Hierarchy in Applying Styles.
+    Priorties of Styling in CSS - 
+      
+    Note --
+    If we Provide Multiple Styles to the same element in the same Scope then Last Style will 
+    get Implemented.
+    Styling Proprioties
+    -------------------------------------------------------------
+    Inline Style > Internal Style > External CSS
+
+    Parent Style Properties values. >  Default Style Properties Values of the Browser in
+    Which it is Openned.
+
+    Id > Class > Generic Selector
+
+    !Important Keyword has the Heightest Proiorty Over other Elements.
+
+9.  What do you mean by Specificity in CSS ?
+->  If there are two or more CSS rules that point to the same element, the selector with the
+    highest specificity value will get Applied to the ELement.
+    There is a Specificity value Calculator that Calculates the Specificity Value.
+
+10. What do you mean by Inheritence in CSS ?
+->  CSS Inheritence is the Process Where Child HTML ELement Inherites CSS Properties value 
+    from the Parent HTML ELements.  
+
+    There are Three Main Properties of Inheritence -
+    1.Inherit - In Case of Inherit the ELement will Inherit Properties from the Parent to
+    the Child ELement.
+    2.Intial - In Case of Intial ELement Will get Intialized with the default Value as Per 
+    Default Value Provided by the Browser.
+    3.Unset - In This Case ELement Properties will Reset to its Natural Values as Per as 
+    Provided by the CSS rules, It may be Inherit Parent Property Value or Intial Value.
+
+11. How does Semantics Tags help both Developer and the Browser ?     
+->  Semantics Tags describes its Meaning to the Developer So that He Can Know Meaning of the Tag 
+    and Where it Should go and what Should be placed In.
+
+    
+
+
+    
+
 
        
 

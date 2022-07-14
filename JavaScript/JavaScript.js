@@ -312,7 +312,25 @@ and Variable length parameter must be specified at the End.
    Strict mode makes it easier to write "secure" JavaScript Code.
    Strict mode changes previously accepted "bad syntax" into real errors.
 
-*/
+   What do you mean by async and defer Attribute in Script Tag ?
+-> When load a Webpage Two major things are Happening there 
+   1. HTML Parsing 
+   2. Loading of the Scripts
+   
+   Here Loading of the Scripts is also consisting of two Parts -
+   1. Loading of the Scripts from the Server
+   2. Execution of the Scripts Line by Line
+
+   async - With async The Script file gets downloaded asynchronously and then executed as
+   soon as it's downloaded.
+   The async attribute is a boolean attribute
+   
+   defer -  With defer , The Script file gets downloaded asynchronously, but executed only 
+   when the document parsing is completed. With defer , scripts will execute in the same 
+   order as they are called.
+   The defer attribute is a boolean attribute
+
+*/  
 
 
 

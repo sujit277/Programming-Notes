@@ -126,7 +126,7 @@
 ->  useLocation hook returns the location object used by the react-router-dom.
 
     What do you mean by useMemo ?
-->  React useMemo Hook returns a Memorised Value.
+->  React useMemo Hook returns a  memoized Value.
     The useMemo Hook only runs when one of its Dependencies Update.  
 
     The useMemo Hook can be used to avoid expensive resource, intensive functions from 
@@ -145,8 +145,12 @@
     useRef() only returns one item. It returns an Object called current.
     When we initialize useRef we set the initial value: useRef(0).
 
+     What do you mean by Pure Component in React ?
+->  A React Component is said to be Pure if it renders the same output for the same State and 
+    Props.
+
     What do you mean by useCallback ?
-->  useCallback hooks returns a memorised callback function. 
+->  useCallback hooks returns a memoized callback function. 
     useCallback hooks only runs when one of its dependencies update. 
     The useCallback and useMemo Hooks are similar. The main difference is that useMemo returns
     a memoized value and useCallback returns a memorised function.

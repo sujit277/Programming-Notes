@@ -1,6 +1,5 @@
 1. What do you mean by Typescript ?
--> TypeScript is JavaScript with syntax for types. TypeScript is a strongly typed 
-   programming language that builds on JavaScript. 
+-> TypeScript is a JavaScript with Strongly Typed. 
 
 2. What do you mean by Tuples in Typescript ?
 -> Tuple is a Heterogenous collection of elements of different data types.
@@ -8,7 +7,7 @@
 
 3. What do you mean by Array in Typescript?
 -> Array is a homogenous collection of elements of similar data types.
-   let arr[]:number[] = [10,20,30,40]
+   arr[]:number[] = [10,20,30,40]
 
 4. What do you mean by Unions is Typescript?
 -> Union we use to define a variable which can accept value of more than one datatypes.
@@ -16,9 +15,9 @@
    value = 120
 
 5. What do you mean by interface in Typescript?
--> Interface is an abstract type that is used to specify a behaviour of the class must be 
-   Implemented.
-   Interface contains Method Declarations and Variable Declarations
+-> -It is a component whose object cannot be created. It implements highest level of 
+    abstraction. 
+   Interface contains Method Declarations Without Implementation and Variable Declarations
 
 6. What do you mean by enums?
 -> Enums we use it to declare named constants in Typescript.
@@ -29,3 +28,6 @@
     Right,  
    }  
    console.log(Direction);
+
+   Note - 
+   TypeScript Notes - https://www.typescripttutorial.net/

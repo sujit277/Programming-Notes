@@ -18,25 +18,26 @@
    and Actual Content.
 
 3. What do you mean by Flex Display?
--> Displays an element as a block-level flex container.
+-> Display flex is the property of flex container to use flexbox.
 
-4. What do you mean by semantic tags?
--> A semantic element clearly describes its meaning to both the browser and the developer.
-   semantic elements: <form>, <table>,<article>,<footer>,<header>and <section>   
-   non-semantic elements: <div> and <span> - Tells nothing about its content.
+4. What do you mean by Semantic tags and Non Semantic Tags?
+-> Semantic element clearly describes its meaning to both the browser and the developer.
+   Semantic elements: <form>, <table>,<article>,<footer>,<header>and <section>   
+   Non-Semantic elements: <div> and <span> - Tells nothing about its content.
 
 5. What do you mean by HTML Quatations ?
 -> The HTML Quotations is used to create quotation in HTML. The HTML <q> tag is used to 
-   define a short quotation. It is a block-level element and HTML <blockquote> tag is used 
-   to define a section that is quoted from another source. 
+   define a short quotation. Browsers normally insert quotation marks around the quotation.
+   and HTML <blockquote> tag is used to define a section that is quoted from another source.
+   Browsers usually indent <blockquote> elements.
 
 6. What do you mean by Citation Elements ?
 -> The <cite> HTML element is used to describe a reference to a cited creative work, and 
    must include the title of that work. 
 
 7. What do you mean by <aside> Element ?
--> The <aside> HTML element represents a portion of a document whose content is only 
-   indirectly related to the document's main content.
+->  The aside content should be indirectly related to the surrounding content. Tip: The
+    <aside> content is often placed as a sidebar in a document.
 
 8. How we can Display Emoji in HTML Pages ?
 -> Emojis look like images, or icons, but they are not.

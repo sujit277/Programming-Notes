@@ -1,3 +1,6 @@
+                                    Angular
+             -------------------------------------------------------------                       
+
    What do you mean by Angular?
 -> Angular is a framework that is used to build client side applications.
    It is used in the development of Single Page Applications (SPAs).
@@ -79,7 +82,7 @@
 
 
    What is Property binding ?
--> Property binding in Angular helps us set values for properties of HTML
+-> Property binding in Angular is technique which is used to set values for properties of HTML
    elements or directives.
    e.g - 
    <input type="text" placeholder="Enter Your Name" [value]=name >
@@ -92,7 +95,7 @@
    component class.
 
    What do you mean by Template reference Variable ?
--> Template variables help us to use data from a HTML template to a Typescript template.
+-> Template variables help us to use data from a HTML template in a Typescript template.
 
    What are the pipes in Angular?
 -> Pipes are simple functions used in HTML template expressions to accept an 
@@ -114,10 +117,20 @@
    What are Forms in Angular ? 
 -> Angular forms are used to handle user's input.
    Types of Angular forms --
-   1.Template Forms -
-     Mostly Work done in the Component template.
+   1.Template Driven Forms -
+     1. Mostly Work done in the Component template.
+        In a Template-Driven approach, most of the logic is driven from the template.
+     2. Template-driven forms are asynchronous in nature.
+        Template-Driven forms use two-way data binding to update the data model in the component
+        as changes are made in the template and vice versa.
+     3. It is Unstructured and Mutuable.
+     
    2.Reactive Forms -
-     Mostly Work done in the Component class. 
+     1. Mostly Work done in the Component class.
+        In Reactive-Driven approach, the logic resides mainly in the Component or Typescript code. 
+     2. Reactive forms are mostly synchronous in nature.
+     3. It is Structured and Immutable.
+     
 
    What do you mean by Directives in Angular ? 
 -> Directives are classes that add additional behavior to HTML elements in our Angular applications. 
@@ -127,12 +140,11 @@
       e.g -- ngClass, ngModel, ngStyle
   
      2. Structural directive --
-      Structure directives manipulate the HTML elements.
+      Structure directives manipulate the HTML DOM elements.
       e.g -- *ngIf and *ngFor and ngSwitch.
 
     3. Custom directive --
-      Attribute directive also called custom directives.These directive are used to 
-      execute logic and apply visual changes to the element to which it is applied.
+      Custom directives are the Userdefined Directives.
 
    4. Component directive -- 
       It Provides structure design and the working pattern of the components.
@@ -155,53 +167,100 @@
 
     What is Routing ?
 ->  Routing basically means navigating between pages.routing allows angular to display 
-    different "pages" or components.
+    different "pages" or components on specific Urls.
 
      What is Dynamic Routing ?
 ->   Dynamic routing, also called adaptive routing, It is a process where a router can forward
      data with the Route URL.
-   
+
+     What do you mean by Group Routing ?
+->   Group Routing allow us to group all the routes related to our modules.      
+     Group Routing are helpful in the situation when you want to apply one attribute to all
+     the routes. 
+
      What do you mean by Lazy Loading ?
-->   Lazy loading is a technology of angular that allows you to load JavaScript components
-     when a specific route is activated. It improves application load time speed by splitting
+->   Lazy loading is a technology of angular that allows us to load specific JavaScript 
+     components when a specific route is activated. It improves application load time speed by splitting
      the application into many bundles. When the user navigates by the app, bundles are
      loaded as needed.
 
      What do you mean By Services ?
-->   An Angular service is just a JavaScript function. All we have to do is create a class
+->   An Angular service is like simple Class file. All we have to do is create a class
      and add methods and properties. Then we can create an instance of this class in our
-     Component and call its methods.
+     Component and call its methods and data Members.
+     
+     Different Features of Services --
+     1. Using Services we can create Global data and We can share data between components
+     2. Implement Resuable Application Logic.
+     3. Using Services we can External Interaction like Database Connection.
+     There are two type of Services -
+     1. Builtin Services
+     2. Userdefined Services
+
      List of Predefined Services -- 
      1. filter - Filters are used for formatting data displayed to the user.
      2. http - This service facilitates communication with the remote HTTP servers via the
                browser’s XMLHttpRequest object.
-     3 log - Console logger.
-
+     3  log - Console logger.
+     
 
     What do you mean by Auth Guards ?
 -> The auth guard is an angular route guard that's used to prevent unauthenticated or 
     unauthorized users from accessing restricted routes, it does this by using the
-    CanActivate method which allows the guard to decide if a route can be activated with
-    the canActivate() method.
+    CanActivate method.
 
     What are HostListeners ?	
 ->  HostListeners lets us listen for events on the host element or component directive.
 
     What do you mean by HostBinding ?
-->  HostBinding lets us set properties on the element or component that hosts the
-    directive.
+->  HostBinding lets us set properties on the host element or component directive.
 
     What is Karma ?
 ->  Karma is a testing automation tool created by the Angular JS team at Google.   
     
     What do you mean by Content Projection ?
-->  Content projection is a pattern in which you insert, or project the content to some other
+->  Content projection is a pattern in which we insert, or project the content to some other
     Component to which we want to use it. 
 
     What is observables in Angular?
 ->  Observables are functions that throw values. Objects called observers subscribe to these
-    values.
+    values. 
+    we use Observables to perform asynchronous operation and handle asynchronous data.
+    Observable Emits stream of Data over a period of time.It is provided by JavaScript rxjs 
+    libarary.
 
+    What do you mean by Observer ?
+->  An Observer is a consumer of values delivered by an Observable.   
+
+    A handler for receiving observable notifications implements the Observer interface. 
+    It is an object that defines callback methods to handle the three types of notifications 
+    that an observable can send: 
+
+    1. next (Required) - A handler for each delivered value. Called zero or more times after 
+    execution starts.
+    2. error (Optional) - A handler for an error notification. An error halts execution of the
+    observable instance.
+    3. complete (Optional) - A handler for the execution-complete notification. Delayed values
+    can continue to be delivered to the next handler after execution is complete.
+
+    What do you mean by Multicasting ?
+->  Multicasting is the practice of broadcasting to a list of multiple subscribers in a 
+    single execution.    
+    With a multicasting observable, you don't register multiple listeners on the document, 
+    but instead re-use the first listener and send values out to each subscriber.
+
+    What do you mean by Rxjs? 
+->  RxJS stands for (Reactive Extensions for JavaScript).It is a JavaScript libarary that allows
+    us to work with asynchronous data stream.
+
+     we can use some methods from the RxJS library that create simple observables of 
+     frequently used types:
+
+     1. of(...items)	- Returns an Observable instance that synchronously delivers the values
+     provided as arguments.
+     2. from(iterable) - Converts its argument to an Observable instance. This method is 
+     commonly used to convert an array to an observable
+    
    What do you mean by Subscribe in Angular ?
 -> Subscribe() is a method in Angular that connects the observer to observable events. 
    Subscribe Method detects for any change is made in the observable. 
@@ -226,26 +285,24 @@
 
     What do you mean by Behavioural Subject?
 ->  Behaviourable Subject  is a special type of observable Which multicast its values to 
-    all of the obsevers who has subscribe to it. it addition it has a notation of a current
-    value which returns current value.
+    all of the obsevers who has subscribe to it.It can also act as Observer it addition it
+    has a notation of a current value which returns current value.
 
-    What are ViewChild ?
--> If we want to access a child component, directive, DOM element inside the parent component, 
-    we use the decorator @ViewChild() in Angular. Since the child component can be 
-    located inside the parent component, it can accessed as @ViewChild.
+    In Subject, the subscribers will only receive the upcoming value. In BehaviorSubject, 
+    the subscribers will receive the previous value and also upcoming value.
 
    What is Router Outlet ?
 -> Router-outlet in Angular works as a placeholder which is used to load the different
-    components dynamically based on the activated component or current route state.
+   components dynamically based on the activated component or current route state.
 
    What is the purpose of ngModule ?
 -> NgModule is a class Marked by @NgModule decorator.
-   The structure of an NgModule contains declarations, imports, providers, exports and bootstrapping.
-   The purpose of NgModule is to organize the application , It consolidate components, Directives
-   and Pipes into cohesive block of functionality.
+   The purpose of NgModule is to organize the application.
+   The structure of an NgModule contains declarations, imports, providers, exports and 
+   bootstrapping.
 
    What are Exports in NgModule in Angular ?
--> It enables an Angular module to expose some of its components/directives/pipes to the
+-> It enables an Angular module to expose any of its components/directives/pipes to the
     other modules from the current module in the applications.
 
    What are Imports in NgModule in Angular ?
@@ -254,6 +311,12 @@
     What are Declarations in Angular ?
 ->  Declarations we use it to make directives from the current module available to other 
     directives in the same module.
+
+    What is Bootstrapping in Angular ?
+->  The process of loading the index. html page, app-level module, and app-level component is 
+    called Bootstrapping.
+    It is used to start up an Angular application manually, it provides more control over
+    the initialization of the application.    
 
    What are Providers in Angular ?
 -> Providers is used to register the classes to an angular module as a service.
@@ -265,15 +328,15 @@
 
    What are the Different LifeCycle Hooks Methods of Angular?
    The Different LifeCycle Hook Methods of Angular
-   1. ngOnInit() - The ng-init directive is used to initialize an Angular Application
-      data When an Angular Application Component is Loaded.
+   1. ngOnInit() - It is a LifeCycle hook which is used to initialize an Angular Application
+      component data When an Angular Application Component is Loaded.
    2. ngOnChanges() - The ngOnChanges is a life cycle hook, which angular fires when it 
       detects changes to data-bound input property.
    3. ngOnDestroy() -- ngOnDestroy is a life cycle method whose purpose is to perform custom 
      clean-up just before Angular destroys the Directive|Pipes|Services Instance.
-   4. ngDoCheck() -- ngDoCheck  is a life cycle method Which Angular fires when it  
+   4. ngDoCheck() -- ngDoCheck  is a life cycle hook Which gets fired when it  
       detects changes that Angular can't or won't detect on its own.
-   5. ngAfterContentInit() -- A Life cycle method that is invoked immediately after Angular 
+   5. ngAfterContentInit() -- A Life cycle hook that is invoked immediately after Angular 
       has completed initialization of all of the directive's content.
    6. ngAfterContentChecked() -- A life cycle method that is invoked immediately after the
       Angular has completed checking all of the directive's content.
@@ -290,13 +353,11 @@
     What is NativeElement in angular?
 ->  Native Element holds the reference to the underlying DOM object.
 
-    What do you mean by Rxjs? 
-->  RxJS stands for (Reactive Extensions for JavaScript) is a library for reactive programming 
-    using observables that makes it easier to compose asynchronous or callback-based code.
-
     What do you mean by Style binding ?
 ->  Style binding is used to set a style of a view element. We can set inline styles with 
-    style binding. Like with class and attribute binding    
+    style binding.
+
+    <nav [style.background-color]="expression"></nav>
 
    What do you mean by MVC Pattern ?
 ->  MVC Stands for Model  View Controller.This pattern is used to seprate Application 
@@ -313,3 +374,12 @@
    What do you mean by Child Routing ?
 -> Routes Which are the childs of the Parent Route.                  
      
+   What are ViewChild ?
+-> If we want to access a Child Component, Directive, DOM element inside the parent component 
+   we use the decorator @ViewChild() in Angular. Since the child component can be 
+   located inside the parent component, it can accessed as @ViewChild.
+
+   What do you mean by TestBed ?
+-> TestBed is the primary api for writing unit tests for Angular applications and libraries. 
+
+  
